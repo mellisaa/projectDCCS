@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web page </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    </head>
+<body>
+<!-- Tab links -->
+    <div class="tab">
+      <button class="tablink" onclick="openPage('Administration', this)" > Administration </button>
+      <button class="tablink" onclick="openPage('Formular', this)"> Formular </button>
+    </div>
+   
+<!-- Tab content -->
+    <div id = "Administration" class = "tabcontent">
+        <form id="searchForm" action = "JavaScript:searchFormular(formularName.value)"> Formular name:  
+          <input id = "formularName" value = "" required>
+          <input type = "submit" value = "Search">
+        </form>
+    </div>
+ 
+    <div id="Formular" class="tabcontent">
+        <form id = "choseForm" action = "JavaScript:loadFormular(choseFormular.value,formularVersion.value)"> Formular name:
+            <select id = "choseFormular"  style = "background-color: #1231" required>
+                <option value = "Some existing formular"> Some existing formular </option>
+            </select> Version
+            <input id = "formularVersion" type = "number" value = "" min = "1" style = "width:50px" required>
+            <input type = "submit" value = "Load">
+        </form>
+    </div>
+ 
+    <div id = "welcomePage">
+        <h1> Welcome! </h1>
+    </div>
+    <script src="scriptIndexDB.js"> </script>
+     
+</body>
+</html>

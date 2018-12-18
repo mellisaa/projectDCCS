@@ -1,0 +1,122 @@
+* {box-sizing: border-box}
+ 
+#welcomePage {
+	text-align: center;
+	color: #8B7765;
+	margin-top: 200px;
+}
+ /* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: Arial;
+  background-color: #FFC1C1;
+}
+.tab {
+    padding-left: 20px;
+}
+/* Style tab links */
+.tablink {
+  background-color: #9874;
+  color: left;
+  float: center;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  border-style: outset;
+  border-color: gray;
+  border-radius: 0px 25px 0px 0px;
+
+}
+ 
+.tablink:hover {
+  background-color: #7777;
+}
+ 
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 80px 50px;
+  height: 100%;
+  float: center;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 8px;
+  background-size: cover;
+  background-image: url("http://yourbody-ua.info/wp-content/uploads/2018/05/powerpoint-background-pink-flower-parksandrecgifs-inside-powerpoint-background-pink-flower.jpg");
+}
+ 
+/* Style */
+#Administration button{
+    padding: 2px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #DB7093;
+}
+ 
+ select,input{
+    padding: 2px;
+    margin: 14px;
+}
+ 
+#saveButton {
+    margin-top: 50px;
+    position: absolute;
+    left: 700px;
+	
+}
+ 
+#save {
+    padding: 2px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #DB7093;
+    margin-top: 50px;
+    position: absolute;
+    left: 500px;
+}
+ 
+#Administration p {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    position: relative;
+    left: 299px;
+    height: auto;
+}
+#Administration p input{
+    padding: 2px;
+    margin: 2px;
+}
+ 
+#makeForm p{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    height: auto;
+}
+ 
+ .row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    width: 400px;
+ }
+ 
+ .row div {
+    width: 150px;
+ }
+ 
+.row div p {
+    float: center;
+}
